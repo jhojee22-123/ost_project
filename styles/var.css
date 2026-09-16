@@ -7,15 +7,14 @@
     --color-text-sub:#494949;/* 쇼룸 보조글자 */
     --color-mint:#E9F5F2;/* 민트배경 */
     --color-text-mint:#509D91;/* 민트글자 */
-    --color-light-gray:#919391;/* footer의 연한글씨 */
+    --color-light-gray:#919391;/* footer의 연한글씨/보조연회색 */
 
     /* 데스크탑 폰트 크기 */
-    --d-font-size-desc: 1.125em;     /* 보조설명 (18px 기준) */
-    --d-font-size-banner: 2.5em;     /* 광고제목 (40px 기준) */
-    --d-font-size-title-sm: 1.25em;  /* 레이아웃제목-소 (20px 기준) */
     --d-font-size-product: 1em;      /* 상품명 (16px 기준) */
-    --d-font-size-price: 1.125em;    /* 상품가격 (18px 기준) */
-    --d-font-size-title-lg: 1.625em; /* 레이아웃제목-대 (26px 기준) */
+    --d-font-size-s: 1.125em;     /* 보조설명,상품가격 (18px 기준) */
+    --d-font-size-m: 1.25em;  /* 레이아웃제목-소 (20px 기준) */
+    --d-font-size-l: 1.625em; /* 레이아웃제목-대 (26px 기준) */
+    --d-font-size-xl: 2.5em;     /* 광고제목 (40px 기준) */
 
     /* 모바일 폰트 크기 */
     --m-font-size-product: 0.75em;   /* 상품명 (12px 기준) */
@@ -31,12 +30,12 @@
     /* 여백 */
     /* 데스크탑 */
     /* 상하 패딩 (Top-Bottom) */
-    --spacing-tb-30: 30px;
-    --spacing-tb-80: 80px;
-    --spacing-tb-100: 100px;
+    --spacing-t-s: 30px;
+    --spacing-t-m: 80px;
+    --spacing-t-l: 100px;
     /* 좌우 패딩 (Left-Right) */
-    --spacing-lr-62-5: 62.5px; /* 또는 소수점을 빼고 --spacing-lr-62 등 */
-    --spacing-lr-120: 120px;
-    --spacing-lr-130: 130px;
-    --spacing-lr-150: 150px;
+    --spacing-l-s: 62.5px; /* 또는 소수점을 빼고 --spacing-lr-62 등 */
+    --spacing-l-m: 120px;
+    --spacing-l-l: 130px;
+    --spacing-l-xl: 150px;
 }/* e:root */

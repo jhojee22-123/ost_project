@@ -27,3 +27,7 @@ const mainbanner = new Swiper ('.main-banner-swiper',{
     el: '.banner-scrollbar', //고유 변수로 변경
     draggable: true,        // 스크롤바를 마우스로 잡고 움직일 수 있는지 여부
 }});
+//bestnew-container
+const tabButtons = document.querySelectorAll('.bestnew-tabs .tab-btn');
+const productLists = document.querySelectorAll('.bestnew-product .product-list');
+
