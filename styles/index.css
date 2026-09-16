@@ -177,7 +177,6 @@ main .bestnew-container .bestnew-product .best-list {
     gap: 20px;
 }
 main .bestnew-container .bestnew-product .best-list .product-item {
-    flex: 0 0 360px;
 }
 main .bestnew-container .bestnew-product .best-list .product-item a {}
 main .bestnew-container .bestnew-product .best-list .product-item a .product-img {
