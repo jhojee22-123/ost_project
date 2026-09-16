@@ -198,7 +198,7 @@ main .bestnew-container .bestnew-product .product-list .product-item a .product-
     height: 420px;
 }
 main .bestnew-container .bestnew-product .product-list .product-item a .product-img img {
-    width:100%; height: 100%;
+    width:100%; 
 }
 main .bestnew-container .bestnew-product .product-list .product-item a .product-info {
     display:flex; flex-flow:column nowrap; /* 세로 + 줄바꿈 금지 */
@@ -211,3 +211,54 @@ main .bestnew-container .bestnew-product .product-list .product-item a .product-
     font-size:var(--d-font-size-s);
     font-weight:var(--font-weight-l);
 }
+main .collection-container {
+}
+main .collection-container .collection-header {
+    padding: 80px 130px 30px 120px ;
+}
+main .collection-container .collection-header h2 {
+    font-size:var(--d-font-size-l);
+    font-weight: var(--font-weight-l);
+}
+main .collection-container .collection-layout {
+    display:flex;
+    background-color: aqua;
+    padding: 0 120px 30px;
+}
+main .collection-container .collection-layout .collection-img {
+    width:1021px; height:1350px;
+}
+main .collection-container .collection-layout .collection-img img {
+    width:100%;
+    display:block;
+}
+main .collection-container .collection-layout .product-list {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+main .collection-container .collection-layout .product-list .product-card {
+    width:450px; height:285px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+main .collection-container .collection-layout .product-list .card1 {
+    background-image: url(../images/collection1.jpg);
+    
+}
+main .collection-container .collection-layout .product-list .card2 {
+    background-image: url(../images/collection2.jpg);
+}
+main .collection-container .collection-layout .product-list .card3 {
+    background-image: url(../images/collection3.jpg);
+}
+main .collection-container .collection-layout .product-list .product-card .product-info {}
+main .collection-container .collection-layout .product-list .product-card .product-info h3 {}
+main .collection-container .collection-layout .product-list .product-card .product-info p {}
+main .collection-container .collection-layout .product-list .product-card .product-tag {
+    font-weight:var(--font-weight-l);
+}
+main .collection-container .collection-layout .product-list .product-card a {}
+main .collection-container .collection-layout .product-list .product-card a span {}
+main .collection-container .collection-layout .product-list .product-card a img {}

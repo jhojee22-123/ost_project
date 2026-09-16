@@ -27,7 +27,27 @@ const mainbanner = new Swiper ('.main-banner-swiper',{
     el: '.banner-scrollbar', //고유 변수로 변경
     draggable: true,        // 스크롤바를 마우스로 잡고 움직일 수 있는지 여부
 }});
-//bestnew-container
-const tabButtons = document.querySelectorAll('.bestnew-tabs .tab-btn');
-const productLists = document.querySelectorAll('.bestnew-product .product-list');
 
+//bestnew-container for03.js 참고
+// 1. 변수지정(2,2)
+    const tabButtons = document.querySelectorAll('.bestnew-tabs .tab-btn');
+    const productLists = document.querySelectorAll('.bestnew-product .product-list');
+
+// 2.모든 active 비활성화
+    function resetFunc(target) {  //target 배열변수가 있는 resetFunc함수지정
+    for (let reset of target) { //모든 target배열의 '객체정보'가 reset에 저장 <>in 은 '인덱스'저장
+        reset.classList.remove('active'); //reset의 클래스명 active를 모두제거
+    }
+}
+
+// 3. 
+tabButtons.forEach((o, i) => { //o는 객체정보, i는 index(순서)/ tabButtons을 하나씩 꺼내서 o,i에 넣고 실행
+    o.addEventListener('click', () => { //o 에게 click시 실행할 이벤트를 추가
+
+        resetFunc(tabButtons); // 위 함수실행
+        o.classList.add('active'); //o의 classList에 active를 추가한다
+        console.log(i);//버튼클릭시 확인가능
+        resetFunc(productLists);
+        productLists[i].classList.add('active'); // 상품목록[상품정보의 순서와 동일]의 classList에 active 실행
+    });
+});
