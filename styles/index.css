@@ -104,15 +104,25 @@ main .main-banner-swiper .swiper-wrapper .swiper-slide {/* 대부분 값 내장-
     display: flex;
     align-items: center;
 }
-main .main-banner-swiper .swiper-wrapper .slide1 {
-    background-image: url(../images/banner-slide1.jpg);
+main .main-banner-swiper .swiper-wrapper .swiper-slide {
     background-size: cover;/* 이미지가 슬라이드 전체를 채우게 */
     background-position: center;  /* 이미지 정중앙 */
     background-repeat: no-repeat; /* 이미지 반복막기*/
 }
-main .main-banner-swiper .swiper-wrapper .swiper-slide .banner-text {
+main .main-banner-swiper .swiper-wrapper .slide1 {
+    background-image: url(../images/banner-slide1.jpg);
+}
+main .main-banner-swiper .swiper-wrapper .slide1 .banner-text {
     position:absolute;
     right:300px;
+    text-align: center;
+}
+main .main-banner-swiper .swiper-wrapper .slide2 {
+    background-image: url(../images/banner-slide2.png);
+}
+main .main-banner-swiper .swiper-wrapper .slide2 .banner-text {
+    position:absolute;
+    left:300px;
     text-align: center;
 }
 main .main-banner-swiper .swiper-wrapper .swiper-slide .banner-text h2 {
@@ -123,7 +133,21 @@ main .main-banner-swiper .swiper-wrapper .swiper-slide .banner-text h2 {
 main .main-banner-swiper .swiper-wrapper .swiper-slide .banner-text p {
     font-size:1.375em;
 }
-main .main-banner-swiper .swiper-scrollbar {}
+main .main-banner-swiper .banner-scrollbar {
+    position: absolute;     /* 배너 안에서 자유롭게 배치하기 위함 */
+    bottom: 78px;           /* 배너 맨 아래에서 위로 30px 떨어진 곳에 배치 */
+    left: auto;             /* 왼쪽으로 붙으려는 값 초기화 */
+    right: 157px;           /* 오른쪽에서 150px떨어짐 */
+    width: 510px;           /* 스크롤바 전체 길이 (원하는 px이나 %로 조절) */
+    height: 3px;            /* 스크롤바 두께 */
+    background: #D9d9d9; /* 스크롤바 바탕색 (반투명 흰색) */
+    border-radius: 4px;     /* 테두리를 둥글게 */
+    z-index: 10;            /* 이미지나 텍스트 뒤로 숨지 않도록 앞으로 끌어오기 */
+}
+main .main-banner-swiper .banner-scrollbar .swiper-scrollbar-drag {
+    background: var(--color-dark);    /* 움직이는 바의 색상 */
+    border-radius: 4px;     /* 둥글게 처리 */
+}
 /* 2행 */
 main .bestnew-container {
     padding: 100px 0;
@@ -148,11 +172,24 @@ main .bestnew-container .bestnew-tabs .tab-btn:first-child::after {
     background-color:var(--color-light-gray);   /* 선의 색상 (회색) */
     display: inline-block;/* 인라인처럼 나란히설수잇으면서 원하는대로 키울수잇는 블록의 장점결합 */
 }
-main .bestnew-container .bestnew-product .best-list {}
-main .bestnew-container .bestnew-product .best-list .product-item {}
+main .bestnew-container .bestnew-product .best-list {
+    display: flex; flex-flow: row nowrap;
+    gap: 20px;
+}
+main .bestnew-container .bestnew-product .best-list .product-item {
+    flex: 0 0 360px;
+}
 main .bestnew-container .bestnew-product .best-list .product-item a {}
-main .bestnew-container .bestnew-product .best-list .product-item a .product-img {}
-main .bestnew-container .bestnew-product .best-list .product-item a .product-img img {}
+main .bestnew-container .bestnew-product .best-list .product-item a .product-img {
+    width: 360px;
+    height: 420px;
+    overflow: hidden;
+    display:block;
+}
+main .bestnew-container .bestnew-product .best-list .product-item a .product-img img {
+    width:100%; height: 100%;
+    object-fit: cover;
+}
 main .bestnew-container .bestnew-product .best-list .product-item a .product-info {}
 main .bestnew-container .bestnew-product .best-list .product-item a .product-info h3 {}
 main .bestnew-container .bestnew-product .best-list .product-item a .product-info p {}
