@@ -224,6 +224,7 @@ main .collection-container .collection-layout {
     display:flex;
     background-color: aqua;
     padding: 0 120px 30px;
+    gap:30px;
 }
 main .collection-container .collection-layout .collection-img {
     width:1021px; height:1350px;
@@ -242,6 +243,7 @@ main .collection-container .collection-layout .product-list .product-card {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
+    position: relative;
 }
 main .collection-container .collection-layout .product-list .card1 {
     background-image: url(../images/collection1.jpg);
@@ -263,15 +265,34 @@ main .collection-container .collection-layout .product-list .product-card .produ
 main .collection-container .collection-layout .product-list .product-card .product-info p {}
 main .collection-container .collection-layout .product-list .product-card .product-tag {
     font-weight:var(--font-weight-l);
+    position: absolute;
+    top:16px; left:16px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 8px 20px 8px 15px;
+    letter-spacing: 0.06em;
+    border-radius: 3px;
+}
+main .collection-container .collection-layout .product-list .product-card .product-tag::after {
+    content: '';
+    position: absolute;
+    bottom: 9px; right: 10px;
+    width: 4px; height: 4px;
+    background-color: var(--color-light);
 }
 main .collection-container .collection-layout .product-list .product-card a {
+    position: absolute;
+    right: 20px; bottom: 20px;
     display:flex;
     flex-flow: row nowrap;
-    align-items:center;
     text-align:center;
 }
-main .collection-container .collection-layout .product-list .product-card a span {}
-main .collection-container .collection-layout .product-list .product-card a img {}
+main .collection-container .collection-layout .product-list .product-card a span {
+    color:var(--color-light-gray);
+}
+main .collection-container .collection-layout .product-list .product-card a img {
+    position: relative; top: 1px; /* 플렉스 성질을 깨지않으면서 아래로 내리는법 */
+}
 
 /* footer내용 */
 footer .footer-container {}
