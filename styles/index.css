@@ -253,12 +253,49 @@ main .collection-container .collection-layout .product-list .card2 {
 main .collection-container .collection-layout .product-list .card3 {
     background-image: url(../images/collection3.jpg);
 }
-main .collection-container .collection-layout .product-list .product-card .product-info {}
+main .collection-container .collection-layout .product-list .product-card .product-info {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: center;
+}
 main .collection-container .collection-layout .product-list .product-card .product-info h3 {}
 main .collection-container .collection-layout .product-list .product-card .product-info p {}
 main .collection-container .collection-layout .product-list .product-card .product-tag {
     font-weight:var(--font-weight-l);
 }
-main .collection-container .collection-layout .product-list .product-card a {}
+main .collection-container .collection-layout .product-list .product-card a {
+    display:flex;
+    flex-flow: row nowrap;
+    align-items:center;
+    text-align:center;
+}
 main .collection-container .collection-layout .product-list .product-card a span {}
 main .collection-container .collection-layout .product-list .product-card a img {}
+
+/* footer내용 */
+footer .footer-container {}
+footer .footer-container .footer-info {}
+footer .footer-container .footer-info .footer-logo {}
+footer .footer-container .footer-info .footer-logo img {}
+footer .footer-container .footer-info .company-details {}
+footer .footer-container .footer-info .company-details .detail {}
+footer .footer-container .footer-info .company-details .detail span {}
+footer .footer-container .footer-info .company-details .detail a {}
+footer .footer-container .footer-info .customer-center {}
+footer .footer-container .footer-info .customer-center p {}
+footer .footer-container .footer-info .customer-center span {}
+footer .footer-container .footer-info p {}
+footer .footer-container .footer-menu-box {}
+footer .footer-container .footer-menu-box .sns-links {}
+footer .footer-container .footer-menu-box .sns-links a {
+    width:25px; height:25px;
+}
+footer .footer-container .footer-menu-box .sns-links a img {
+    width:25px; height:25px;
+}
+footer .footer-container .footer-menu-box .policy-links {}
+footer .footer-container .footer-menu-box .policy-links li {}
+footer .footer-container .footer-menu-box .policy-links li a {
+    color:var(--color-light-gray);
+}
